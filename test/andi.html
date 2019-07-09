@@ -1,0 +1,122 @@
+<html lang="ja" class="">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta name="description" content="クリック/タッチすることで、モーショングラフィックスと共に音を奏でるインタラクティブコンテンツ。" />
+    <meta name="twitter:site" content="@daniwell_aidn" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://aidn.jp/shared/img/tw/momotap.png" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:title" content="Momotap" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://aidn.jp/momotap/" />
+    <meta property="og:image" content="https://aidn.jp/shared/img/og/momotap.png" />
+    <meta property="og:site_name" content="AIDN" />
+    <meta property="og:description" content="クリック/タッチすることで、モーショングラフィックスと共に音を奏でるインタラクティブコンテンツ。" />
+    <meta property="fb:app_id" content="260132667518211" />
+    <meta name="theme-color" content="#000000" />
+    <title>Momotap</title>
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400" rel="stylesheet" />
+    <link charset="UTF-8" href="../shared/sp/css/common.css" rel="stylesheet" />
+    <link charset="utf-8" href="andi.css" rel="stylesheet" />
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+    <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.11/pixi.min.js" type="text/javascript"></script>
+    <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" type="text/javascript"></script>
+    <script charset="UTF-8" src="../shared/js/common.js" type="text/javascript"></script>
+    <script charset="utf-8" src="andi.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css" />
+</head>
+<body>
+<div id="view" style="cursor: pointer;">
+    <canvas width="462" height="754" style="width: 462px; height: 754px; cursor: inherit;"></canvas>
+</div>
+<div id="scene_top" style="display: none;">
+    <h1>Momotap</h1>
+    <div id="ng" style="display: none;">
+        <p class="atten">申し訳ございません、<br />お使いの端末又はブラウザには対応しておりません。</p>
+    </div>
+    <div class="ok" style="display: block;">
+        <p id="bt_start"><a href="">START</a></p>
+    </div>
+    <p id="bt_about"><a href="">ABOUT</a></p>
+    <div class="ok" style="display: block;">
+        <p class="attention">* Raise the volume and enjoy!</p>
+    </div>
+    <p class="tit">SHARE:</p>
+    <p class="con"> <span class="sns" id="bt_tw"><img src="../shared/img/sns/twitter_w.png" alt="tweet" /></span> <span class="sns" id="bt_fb"><img src="../shared/img/sns/facebook_w.png" alt="share" /></span> <span class="sns" id="bt_gp"><img src="../shared/img/sns/google_w.png" alt="google+" /></span> </p>
+</div>
+<div id="scene_loading" style="display: none;">
+    <hr size="1" color="#fff" style="width: 0px; display: none;" />
+</div>
+<div id="scene_main" style="display: block;">
+    <div class="set" style="display: block;">
+        <p class="attention">CLICK &amp; DRAG or PRESS ANY KEY!</p>
+        <p id="bt_feedback"><a href="">FEEDBACK: ON</a></p>
+        <p id="bt_backtrack"><a href="">BACKTRACK: ON</a></p>
+    </div>
+</div>
+<div id="about_cover"></div>
+<div id="about" style="background-color: rgb(255, 181, 91);">
+    <div id="about_in">
+        <p class="close"><span id="bt_close">&times;</span></p>
+        <p class="con"> <a href="../daniwell/" target="_blank">daniwell</a><br />&amp;<br /> <a href="http://momonemomo.com/" target="_blank">Momone Momo</a><br />&amp;<br /> <a href="http://momolabo2406.blogspot.jp/" target="_blank">Momoko Fujimoto</a> </p>
+        <p class="link">Inspired by <a href="http://patatap.com/" target="_blank">Patatap</a><br />(Wonderful website!)</p>
+    </div>
+</div>
+<div id="bt_back" style="display: block;">
+    ＜
+</div>
+<div id="bt_fs" style="display: block;">
+    □
+</div>
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr">
+    <div style="padding: 8px;">
+        <div>
+            <div class="logo">
+                <img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate" />
+            </div>
+        </div>
+    </div>
+    <div class="top" style="padding: 8px; float: left; width: 100%;">
+        <h1 class="title gray">Original text</h1>
+    </div>
+    <div class="middle" style="padding: 8px;">
+        <div class="original-text"></div>
+    </div>
+    <div class="bottom" style="padding: 8px;">
+        <div class="activity-links">
+            <span class="activity-link">Contribute a better translation</span>
+            <span class="activity-link"></span>
+        </div>
+        <div class="started-activity-container">
+            <hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;" />
+            <div class="activity-root"></div>
+        </div>
+    </div>
+    <div class="status-message" style="display: none;"></div>
+</div>
+<div style="position: absolute; bottom: 0; z-index: 100000; left: 50%; transform: translateX(-50%); width: 320px;">
+    <div id="close_adv" style="text-align: right; cursor:pointer;">
+        <svg style="vertical-align:bottom; background:rgba(255, 255, 255, 0.6);" width="12" height="12" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+            <path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"></path>
+        </svg>
+    </div>
+    <div style="width: 320px; height: 100px;">
+        <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-2758302531676411" data-ad-slot="8440261214"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+</div>
+<div class="goog-te-spinner-pos">
+    <div class="goog-te-spinner-animation">
+        <svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewbox="0 0 66 66">
+            <circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
+    </div>
+</div>
+</body>
+</html>

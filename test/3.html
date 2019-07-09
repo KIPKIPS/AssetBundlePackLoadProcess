@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang = "en" style="height: 100%;width: 100%">
+<head>
+    <meta charset = "UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+
+</style>
+<script>
+
+
+    function musicPlay()
+    {
+        document.addEventListener ('mousemove', showMousePosition, false);
+        function showMousePosition ( event ) {
+
+        }
+
+        var body=document.getElementById("body");
+        var height=body.offsetHeight;//浏览器的高度
+        var width=body.offsetWidth;//浏览器的宽度
+        var positionX=event.clientX/width;
+        var positionY=event.clientY/height;
+
+        console.log(positionX+"  "+positionY);
+        /*console.log(width+"  "+height);*/
+        var audio = document.createElement('audio');//生成一个audio元素
+
+        if((positionX>0&&positionX<0.25)&&(positionY>0&&positionY<0.125)){
+            audio.src = '../music/1.mp3'; //音乐的路径
+
+        }
+        if((positionX>0.25&&positionX<0.5)&&(positionY>0&&positionY<0.125)){
+            audio.src = '../music/2.mp3'; //音乐的路径
+        }
+        if((positionX>0.5&&positionX<0.75)&&(positionY>0&&positionY<0.125)){
+            audio.src = '../music/3.mp3'; //音乐的路径
+        }
+        if((positionX>0.75&&positionX<1)&&(positionY>0&&positionY<0.125)){
+            audio.src = '../music/4.mp3'; //音乐的路径
+        }
+
+        if((positionX>0&&positionX<0.25)&&(positionY>0.125&&positionY<0.25)){
+            audio.src = '../music/5.mp3'; //音乐的路径
+        }
+        if((positionX>0.25&&positionX<0.5)&&(positionY>0.125&&positionY<0.25)){
+            audio.src = '../music/6.mp3'; //音乐的路径
+        }
+        if((positionX>0.5&&positionX<0.75)&&(positionY>0.125&&positionY<0.25)){
+            audio.src = '../music/7.mp3'; //音乐的路径
+        }
+        if((positionX>0.75&&positionX<1)&&(positionY>0.125&&positionY<0.25)){
+            audio.src = '../music/8.mp3'; //音乐的路径
+        }
+
+        if((positionX>0&&positionX<0.25)&&(positionY>0.25&&positionY<0.375)){
+            audio.src = '../music/9.mp3'; //音乐的路径
+        }
+        if((positionX>0.25&&positionX<0.5)&&(positionY>0.25&&positionY<0.375)){
+            audio.src = '../music/10.mp3'; //音乐的路径
+        }
+        if((positionX>0.5&&positionX<0.75)&&(positionY>0.25&&positionY<0.375)){
+            audio.src = '../music/11.mp3'; //音乐的路径
+        }
+        if((positionX>0.75&&positionX<1)&&(positionY>0.25&&positionY<0.375)){
+            audio.src = '../music/12.mp3'; //音乐的路径
+        }
+
+        if((positionX>0&&positionX<0.25)&&(positionY>0.375&&positionY<0.5)){
+            audio.src = '../music/13.mp3'; //音乐的路径
+        }
+        if((positionX>0.25&&positionX<0.5)&&(positionY>0.375&&positionY<0.5)){
+            audio.src = '../music/14.mp3'; //音乐的路径
+        }
+        if((positionX>0.5&&positionX<0.75)&&(positionY>0.375&&positionY<0.5)){
+            audio.src = '../music/15.mp3'; //音乐的路径
+        }
+        if((positionX>0.75&&positionX<1)&&(positionY>0.375&&positionY<0.5)){
+            audio.src = '../music/16.mp3'; //音乐的路径
+        }
+
+        if((positionX>0&&positionX<0.25)&&(positionY>0.5&&positionY<0.625)){
+            audio.src = '../music/17.mp3'; //音乐的路径
+        }
+        if((positionX>0.25&&positionX<0.5)&&(positionY>0.5&&positionY<0.625)){
+            audio.src = '../music/18.mp3'; //音乐的路径
+        }
+        if((positionX>0.5&&positionX<0.75)&&(positionY>0.5&&positionY<0.625)){
+            audio.src = '../music/19.mp3'; //音乐的路径
+        }
+        if((positionX>0.75&&positionX<1)&&(positionY>0.5&&positionY<0.625)){
+            audio.src = '../music/20.mp3'; //音乐的路径
+        }
+
+        if((positionX>0&&positionX<0.25)&&(positionY>0.625&&positionY<0.75)){
+            audio.src = '../music/21.mp3'; //音乐的路径
+        }
+        if((positionX>0.25&&positionX<0.5)&&(positionY>0.625&&positionY<0.75)){
+            audio.src = '../music/22.mp3'; //音乐的路径
+        }
+        if((positionX>0.5&&positionX<0.75)&&(positionY>0.625&&positionY<0.75)){
+            audio.src = '../music/23.mp3'; //音乐的路径
+        }
+        if((positionX>0.75&&positionX<1)&&(positionY>0.625&&positionY<0.75)){
+            audio.src = '../music/24.mp3'; //音乐的路径
+        }
+
+        if((positionX>0&&positionX<0.25)&&(positionY>0.75&&positionY<0.875)){
+            audio.src = '../music/25.mp3'; //音乐的路径
+        }
+        if((positionX>0.25&&positionX<0.5)&&(positionY>0.75&&positionY<0.875)){
+            audio.src = '../music/26.mp3'; //音乐的路径
+        }
+        if((positionX>0.5&&positionX<0.75)&&(positionY>0.75&&positionY<0.875)){
+            audio.src = '../music/27.mp3'; //音乐的路径
+        }
+        if((positionX>0.75&&positionX<1)&&(positionY>0.75&&positionY<0.875)){
+            audio.src = '../music/28.mp3'; //音乐的路径
+        }
+
+        if((positionX>0&&positionX<0.25)&&(positionY>0.875&&positionY<1)){
+            audio.src = '../music/29.mp3'; //音乐的路径
+        }
+        if((positionX>0.25&&positionX<0.5)&&(positionY>0.875&&positionY<1)){
+            audio.src = '../music/30.mp3'; //音乐的路径
+        }
+        if((positionX>0.5&&positionX<0.75)&&(positionY>0.875&&positionY<1)){
+            audio.src = '../music/31.mp3'; //音乐的路径
+        }
+        if((positionX>0.75&&positionX<1)&&(positionY>0.875&&positionY<1)){
+            audio.src = '../music/32.mp3'; //音乐的路径
+        }
+        audio.play();
+    }
+
+    </script>
+<body id="body" style="height: 100%;width: 100%">
+<div style="height: 100%;width: 100%" onmousedown="musicPlay()">
+
+</div>
+</body>
+</html>
