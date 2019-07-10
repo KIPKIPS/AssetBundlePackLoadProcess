@@ -187,8 +187,6 @@
         mouseDown = false;
     }
 
-
-
     function play(index) {
 
         var audio = document.createElement('audio');//生成一个audio元素
@@ -655,7 +653,6 @@
     function leave24() {
         if (mouseDown == true) {
             inBox24 = false;
-
         }
     }
 

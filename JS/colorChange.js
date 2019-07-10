@@ -4,6 +4,7 @@ var diff;
 var inputEnable=true;
 /*随机变色*/
 {
+
     function colorChange() {
 
         var color = document.getElementById('color');

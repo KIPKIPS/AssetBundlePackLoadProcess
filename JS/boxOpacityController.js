@@ -1,4 +1,4 @@
-/*opacity控制,box可见度渐变模块*/
+/*enter leave opacity控制,box可见度渐变模块*/
 {
     var box0;
     var box0Opacity = function () {
@@ -1404,3 +1404,7 @@
     }
 
 }
+/*
+$("#box0").click(function(){
+    $("#box0").fadeTo(500,0.5);
+});*/
