@@ -28,18 +28,7 @@
 .fade{
     cursor: pointer;
 }
-.not{
-    cursor: pointer;
-    font-size: 12px;
-    left: 0;
-    right: 0;
-    top: 0;
-    text-align: center;
-    position: absolute;
-    color: #ffffff;
-    width: 200px;
-    margin: auto;
-}
+
 #feedOF:hover{
     animation:change1 0.2s ease ,change2 0.2s ease;
 }
@@ -117,15 +106,28 @@
     }
     #textPlay{
         margin-top:300px;
-        font-size: 14px;
+        font-size: 15px;
         color:white;
     }
     #feedOF {
+        width: 140px;
         margin-top: 392px;
     }
     #bgmOF {
-
+        width: 155px;
         margin-top: 365px;
+    }
+    .not{
+        border-bottom: 1px dashed #ffffff;
+        cursor: pointer;
+        font-size: 13px;
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        position: absolute;
+        color: #ffffff;
+        margin: auto;
     }
     #line{
         margin-top:350px;
@@ -196,45 +198,33 @@
         margin-left:0
     }
     #textTop{
-        font-size: 21px;
-        opacity: 0.9;
-        margin-top:260px;
-    }
-    #textTop{
-        font-size: 15px;
+        font-size: 18px;
         opacity: 0.9;
         margin-top:260px;
     }
     #textPlay{
         margin-top:300px;
-        font-size: 16px;
+        font-size: 17px;
         color:white;
     }
     #feedOF {
-        width: 200px;
-        margin: auto;
+        width: 150px;
         margin-top: 392px;
-        top: 0;
-        text-align: center;
-        font-size: 13px;
-        position: absolute;
-        font-family: sans-serif;
-        left: 0;
-        right: 0;
-        user-select: none;
-        color: #ffffff;
     }
     #bgmOF {
-        font-size: 13px;
+        width: 166px;
+        margin-top: 365px;
+    }
+    .not{
+        border-bottom: 1px dashed #ffffff;
         left: 0;
         right: 0;
         top: 0;
         text-align: center;
         position: absolute;
         color: #ffffff;
-        width: 200px;
         margin: auto;
-        margin-top: 365px;
+        font-size: 14px;
     }
     #line{
         margin-top:350px;
