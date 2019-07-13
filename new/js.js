@@ -98,17 +98,26 @@ var mainDown = function () {
     obj.addEventListener('mousedown', hideElement);/*监听mousedown事件,执行hideElement方法*/
     obj.addEventListener('mouseup', showElement);/*监听mouseup事件,执行showElement方法*/
 }
-var mouseup=true;
+var mouseUp=true;
 /*hideElement方法*/
 function hideElement() {
+
     if(start==true&&Hide==true){
-        mouseup=false;
+        mouseUp=false;
+        $("#textPlay,#back,#full,#feedOF,#bgmOF").hide();
+        setTimeout(function () {
+            $("#textPlay,#back,#full,#feedOF,#bgmOF").show();
+        },1000);
+
+
+        console.log(mouseUp)
+
         $("#canvas").animate({
-            opacity: [0.6, 'linear']
-        },50,function () {
+            opacity: [0.6, 'swing']
+        },40,function () {
             $("#canvas").animate({
-                opacity: [0, 'linear']
-            },50);
+                opacity: [0, 'swing']
+            },40);
         });
 
         /*function textOnMouseDown() {
@@ -136,8 +145,6 @@ function hideElement() {
 }
 /*showElement方法*/
 function showElement() {
-    if(start==true&&mouseup==true)
-        $("#textPlay,#back,#full,#feedOF,#bgmOF").show();
 
 }
 
