@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2807276223
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: player.assetbundle
+      Dependencies: {}
+    Info_1:
+      Name: enemy.assetbundle
+      Dependencies: {}
