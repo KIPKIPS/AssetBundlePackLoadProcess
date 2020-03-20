@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test : MonoBehaviour
-{
+public class Test : MonoBehaviour {
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start() {
+
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+        this.transform.Rotate(new Vector3(0, Time.deltaTime * 100, 0));
     }
 }
