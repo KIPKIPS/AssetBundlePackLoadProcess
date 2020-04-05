@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CubeRotate.cs" />
     <Compile Include="Assets\Scripts\LoadAssetBundles.cs" />
+    <Compile Include="Assets\Scripts\LoadAssetBundlesFromFile.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
