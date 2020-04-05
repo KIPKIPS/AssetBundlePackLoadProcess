@@ -3,5 +3,5 @@ guid: 1a628b122fadab5439cc11f77d685596
 PrefabImporter:
   externalObjects: {}
   userData: 
-  assetBundleName: wall
+  assetBundleName: scene/wall.assetbundle
   assetBundleVariant: assetbundle
