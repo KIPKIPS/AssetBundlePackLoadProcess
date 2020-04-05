@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 public class LoadAssetBundles : MonoBehaviour {
-    public string url;
+    public string url= @"file:\\D:\Unity_WorkStation\AssetBundle_PackLoad_Process\Assets\StreamingAssets\player.assetbundle"; 
 
     public string assetName;
     // Start is called before the first frame update

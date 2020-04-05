@@ -1,10 +1,10 @@
 ManifestFileVersion: 0
-CRC: 1316562136
+CRC: 1780619687
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: player.assetbundle
+      Name: enemy.assetbundle
       Dependencies: {}
     Info_1:
-      Name: enemy.assetbundle
+      Name: player.assetbundle
       Dependencies: {}

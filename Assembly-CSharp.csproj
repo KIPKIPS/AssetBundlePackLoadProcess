@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A1048A05-9430-9AD7-E86B-0036542ACDA5}</ProjectGuid>
+    <ProjectGuid>{94ABDD3D-B01F-B215-93C8-FFBD4F0D8CC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,34 +62,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CubeRotate.cs" />
     <Compile Include="Assets\Scripts\LoadAssetBundles.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Unity_WorkStation/Lua_Hot_Update/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/U3D2019/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
