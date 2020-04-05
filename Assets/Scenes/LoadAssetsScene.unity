@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 1367806018}
   - component: {fileID: 1367806017}
   - component: {fileID: 1367806019}
+  - component: {fileID: 1367806020}
   m_Layer: 0
   m_Name: AssetsManager
   m_TagString: Untagged
@@ -255,12 +256,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367806016}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97964e1277e470f4795ea18c5d704954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   assetName: scene/cylinderwall
+--- !u!114 &1367806020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367806016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e190bfd28985d4642819928d2615d1d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assetName: cylinderwall
 --- !u!1 &1555295567
 GameObject:
   m_ObjectHideFlags: 0
