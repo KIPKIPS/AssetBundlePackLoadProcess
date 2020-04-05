@@ -4,11 +4,12 @@ using UnityEditor;
 using UnityEngine;
 
 public class LoadAssetBundles : MonoBehaviour {
-    private string url= @"file:\\D:\Unity_WorkStation\AssetBundle_PackLoad_Process\Assets\StreamingAssets\player.assetbundle";
+    private string url;
     public string assetName;
     // Start is called before the first frame update
     IEnumerator Start() {
-        url= @"file:\\D:\Unity_WorkStation\AssetBundle_PackLoad_Process\Assets\StreamingAssets\"+assetName.ToLower()+ ".assetbundle";
+        string[] path = assetName.Split('\\');
+        url= @"file:\\D:\Unity_WorkStation\AssetBundle_PackLoad_Process\Assets\StreamingAssets\"+path[0]+"\\"+path[1].ToLower()+ ".assetbundle";
         //Debug.Log(url);
         //清理非托管资源 不受GC控制的资源 Using结束后会隐式的调用Disposable方法
         //using里面的对象必须继承实现IDisposable接口
@@ -20,8 +21,10 @@ public class LoadAssetBundles : MonoBehaviour {
             //下载完成
             else {
                 AssetBundle bundle = www.assetBundle;
-                GameObject go = bundle.LoadAsset<GameObject>(assetName);
-                Instantiate(go);//加载资源
+                GameObject[] gos = bundle.LoadAllAssets<GameObject>();
+                foreach (var go in gos) {
+                    Instantiate(go);//加载资源
+                }
                 //bundle使用完成后就可以卸载掉
                 //bundle.Unload(true);//true卸载全部 false卸载加载过的资源
             }
