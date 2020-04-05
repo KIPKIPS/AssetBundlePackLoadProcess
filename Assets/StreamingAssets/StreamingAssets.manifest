@@ -1,16 +1,29 @@
 ManifestFileVersion: 0
-CRC: 3379010450
+CRC: 785008556
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: scene/cubewall.assetbundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: depend.assetbundle
     Info_1:
       Name: scene/cylinderwall.assetbundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: depend.assetbundle
     Info_2:
       Name: scene/fall.assetbundle.assetbundle
       Dependencies: {}
     Info_3:
       Name: role/player.assetbundle.assetbundle
       Dependencies: {}
+    Info_4:
+      Name: depend.assetbundle
+      Dependencies: {}
+    Info_5:
+      Name: cubewall.assetbundle
+      Dependencies:
+        Dependency_0: depend.assetbundle
+    Info_6:
+      Name: cylinderwall.assetbundle
+      Dependencies:
+        Dependency_0: depend.assetbundle

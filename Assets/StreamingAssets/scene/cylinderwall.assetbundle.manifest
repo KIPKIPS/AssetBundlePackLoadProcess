@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2192005723
+CRC: 1942468640
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d3b94b0a2ee115c8d2adc000a121788c
+    Hash: c8b4c880d85e272163c0147c1fe6a388
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d5fdb2344c6831b949975e457f305696
+    Hash: f031a19312ebd05458d6c922e97cb647
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -17,16 +17,13 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 23
   Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
 - Class: 33
   Script: {instanceID: 0}
 - Class: 43
-  Script: {instanceID: 0}
-- Class: 48
   Script: {instanceID: 0}
 - Class: 136
   Script: {instanceID: 0}
 Assets:
 - Assets/Prefabs/CylinderWall.prefab
-Dependencies: []
+Dependencies:
+- D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Assets/StreamingAssets/depend.assetbundle

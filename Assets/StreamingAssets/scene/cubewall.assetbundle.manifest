@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 728630483
+CRC: 920508951
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 81ab4b2b184d19b636cc062dc4c033ba
+    Hash: 52cd1206ba0b604d0d68f9fb3b4ffb58
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 7c9f0c774f7d1903bd1e8c798f367eb3
+    Hash: ee42f4ef0798608f7612c9225f0971e9
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -17,16 +17,13 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 23
   Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
 - Class: 33
   Script: {instanceID: 0}
 - Class: 43
-  Script: {instanceID: 0}
-- Class: 48
   Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
 Assets:
 - Assets/Prefabs/CubeWall.prefab
-Dependencies: []
+Dependencies:
+- D:/Unity_WorkStation/AssetBundle_PackLoad_Process/Assets/StreamingAssets/depend.assetbundle
