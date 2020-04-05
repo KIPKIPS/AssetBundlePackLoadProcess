@@ -232,8 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b3693668267a24ea7facedc8ca0643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: file:\\D:\Unity_WorkStation\Lua_Hot_Update\Assets\StreamingAssets\player.assetbundle
-  assetName: Player
+  assetName: fall
 --- !u!4 &1367806018
 Transform:
   m_ObjectHideFlags: 0

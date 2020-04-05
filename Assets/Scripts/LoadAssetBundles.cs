@@ -4,11 +4,12 @@ using UnityEditor;
 using UnityEngine;
 
 public class LoadAssetBundles : MonoBehaviour {
-    public string url= @"file:\\D:\Unity_WorkStation\AssetBundle_PackLoad_Process\Assets\StreamingAssets\player.assetbundle"; 
-
+    private string url= @"file:\\D:\Unity_WorkStation\AssetBundle_PackLoad_Process\Assets\StreamingAssets\player.assetbundle";
     public string assetName;
     // Start is called before the first frame update
     IEnumerator Start() {
+        url= @"file:\\D:\Unity_WorkStation\AssetBundle_PackLoad_Process\Assets\StreamingAssets\"+assetName.ToLower()+ ".assetbundle";
+        //Debug.Log(url);
         //清理非托管资源 不受GC控制的资源 Using结束后会隐式的调用Disposable方法
         //using里面的对象必须继承实现IDisposable接口
         using (WWW www = new WWW(url)) {
