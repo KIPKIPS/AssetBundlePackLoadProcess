@@ -7,6 +7,7 @@ public class LoadAssetBundlesWithDepend : MonoBehaviour {
     public string assetName;
     // Start is called before the first frame update
     void Start() {
+
         //获取路径
         string url = Application.streamingAssetsPath + "/" + assetName + ".assetbundle";
         //先加载依赖
@@ -21,9 +22,10 @@ public class LoadAssetBundlesWithDepend : MonoBehaviour {
 
         //加载路径下的资源
         AssetBundle assetBundle = AssetBundle.LoadFromFile(url);
+        //实例化
         GameObject[] gos = assetBundle.LoadAllAssets<GameObject>();
         foreach (GameObject go in gos) {
-            Instantiate(go);//实例化对象
+            Instantiate(go);
         }
     }
 
